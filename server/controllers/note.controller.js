@@ -27,18 +27,7 @@ module.exports.getNotes = (req, res) => {
   });
 };
 
-// module.exports.getEmployeeById = (req, res) => {
-//   Note.findById(req.params.id, (err, doc) => {
-//     if (!err) {
-//       res.send(doc);
-//     } else {
-//       console.log(
-//         "Error in retrieving Employee :" + JSON.stringify(err, undefined, 2)
-//       );
-//     }
-//   });
-// };
-// update operation
+
 module.exports.updateNotes = (req, res) => {
   var note = {
     title: req.body.title,
