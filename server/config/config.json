@@ -1,0 +1,10 @@
+{
+  "development": {
+    "port": 3000,
+    "MONGODB_URI": "mongodb+srv://notesapp:admin123@notesapp.uczgvgn.mongodb.net/?retryWrites=true&w=majority"
+  },
+  "production": {
+    "port": 80,
+    "MONGODB_URI": "mongodb+srv://notesapp:admin123@notesapp.uczgvgn.mongodb.net/?retryWrites=true&w=majority"
+  }
+}
