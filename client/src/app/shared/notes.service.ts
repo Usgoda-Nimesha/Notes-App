@@ -20,16 +20,16 @@ export class NotesService {
   constructor(private http: HttpClient) {}
 
   postSaveNotes(note: Notes) {
-    return this.http.post(environment.apiBaseUrl + '/notes', note);
+    return this.http.post('http://localhost:3000/api' + '/notes', note);
   }
 
   getNotesList() {
-    return this.http.get(environment.apiBaseUrl + '/notes');
+    return this.http.get('http://localhost:3000/api' + '/notes');
   }
   putNotes(note: Notes) {
-    return this.http.put(environment.apiBaseUrl + `/notes/${note._id}`, note);
+    return this.http.put('http://localhost:3000/api' + `/notes/${note._id}`, note);
   }
   deleteNotes(_id: string) {
-    return this.http.delete(environment.apiBaseUrl + `/notes/${_id}`);
+    return this.http.delete('http://localhost:3000/api' + `/notes/${_id}`);
   }
 }
